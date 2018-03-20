@@ -14,5 +14,20 @@ do {
   var numCasualeUtente = Math.floor((Math.random()*10)+1)
   numCasualeUtente_lista.push(numCasualeUtente)
   var somma = somma + numCasualeUtente
+  alert('hai pescato la carta di valore ' + numCasualeUtente + ' il tuo punteggio è ' + somma)
+  var risposta = prompt('vuoi fermarti?')
+  console.log(risposta)
   console.log(somma)
-} while (somma<21);
+} while ((somma<21) && (risposta=='no'));
+if (somma>21) {
+  alert('hai perso')
+}
+else if (somma>numCasuale) {
+  alert('hai vinto')
+}
+else if (somma<numCasuale) {
+  alert('hai perso')
+}
+else if (somma == numCasuale) {
+  alert('hai pareggiato')
+}
