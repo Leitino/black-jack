@@ -9,6 +9,7 @@ numCasualeUtente_lista=[]
 var numCasuale = Math.floor((Math.random()*21)+1) //computer scegli numero tra 1 e 21;
 console.log(numCasuale)
 
+somma=0
 do {
   var numCasualeUtente = Math.floor((Math.random()*10)+1)
   numCasualeUtente_lista.push(numCasualeUtente)
